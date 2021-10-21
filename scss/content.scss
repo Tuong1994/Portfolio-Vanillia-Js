@@ -1,0 +1,647 @@
+.portfolio__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .content {
+    width: $w-100 - 30;
+    height: 100vh;
+    padding: $p-10 * 5 0;
+    .content__title {
+      font-size: $h2;
+      margin-bottom: $m-10 * 5;
+    }
+    @include respond(laptop) {
+      width: $w-100 - 10;
+    }
+    @include respond(tablet) {
+      width: $w-100;
+    }
+  }
+  .home {
+    display: flex;
+    align-items: center;
+    .home__content {
+      width: $w-100 - 50;
+      .content__title {
+        font-size: $h1;
+        margin-bottom: $m-10;
+        strong {
+          font-weight: $medium;
+          color: $tSecondary;
+        }
+      }
+      .content__position {
+        font-size: $subtitle;
+        margin-bottom: $m-10;
+      }
+      .content__text {
+        text-align: justify;
+        line-height: 20px;
+      }
+      .content__download {
+        width: $w-100 - 50;
+        margin: $m-10 * 2 0;
+        &:hover .download {
+          background: transparent;
+          color: $tSecondary;
+          border-color: $primary;
+        }
+        .download {
+          width: $w-100;
+          padding: $p-10 * 2 $p-10 * 3;
+          display: block;
+          background: $primary;
+          color: $tWhite;
+          font-size: $subtitle;
+          text-align: center;
+          border: 1px solid transparent;
+          border-radius: 5px;
+          transition: all 0.5s ease;
+        }
+        @include respond(tablet) {
+          width: $w-100;
+        }
+      }
+      @include respond(extraTablet) {
+        width: $w-100;
+        padding: $p-10 * 5;
+        margin-top: $m-10 * 5;
+      }
+      @include respond(phone) {
+        width: $w-100;
+        padding: $p-10;
+        margin-top: $m-10 * 5;
+      }
+    }
+    .home__image {
+      width: $w-100 - 50;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      &::after {
+        content: "";
+        width: $w-10 * 40;
+        height: $h-10 * 40;
+        background: $primary;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: animate 7s linear infinite;
+        @include respond(extraTablet) {
+          width: $w-10 * 30;
+          height: $h-10 * 30;
+        }
+      }
+      .image {
+        width: $w-10 * 20;
+        height: $h-10 * 20;
+        border-radius: 50px;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+      }
+      @include respond(extraTablet) {
+        width: $w-100;
+      }
+    }
+    @include respond(extraTablet) {
+      flex-direction: column-reverse;
+      margin-top: $m-10 * 10;
+      height: auto;
+    }
+  }
+  .education {
+    height: auto;
+    margin-bottom: $m-10 * 5;
+    .education__content {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .content__image {
+        width: $w-100 - 50;
+        overflow: hidden;
+        padding: $p-10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image__wrapper {
+          width: $w-10 * 40;
+          height: $h-10 * 30;
+          border-radius: 25px;
+          overflow: hidden;
+          &:hover .image {
+            transform: scale(1.5);
+          }
+          .image {
+            transition: all 0.5s ease;
+          }
+          @include respond(tablet) {
+            height: $h-10 * 28;
+          }
+        }
+        @include respond(phone) {
+          width: $w-100;
+        }
+      }
+      .content__item {
+        width: $w-100 - 50;
+        height: $h-10 * 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $p-10 * 2;
+        &:nth-child(1) {
+          border-left: 1px solid $primary;
+          border-bottom: 1px solid $primary;
+          border-bottom-left-radius: 25px;
+        }
+        &:nth-child(4) {
+          border-right: 1px solid $primary;
+          border-top: 1px solid $primary;
+          border-top-right-radius: 25px;
+        }
+        .item__title {
+          font-size: $h3;
+          margin-bottom: $m-10;
+        }
+        .item__text {
+          margin-bottom: $m-10 * 2;
+          p {
+            &:nth-child(1) {
+              font-size: $subtitle;
+              margin-bottom: $m-10;
+            }
+          }
+        }
+        @include respond(extraTablet) {
+          height: $h-10 * 25;
+        }
+        @include respond(phone) {
+          width: $w-100;
+          height: $h-10 * 25;
+          margin: $m-10 * 2 0;
+        }
+      }
+      @include respond(phone) {
+        flex-direction: column-reverse;
+      }
+    }
+    @include respond(tablet) {
+      padding: $p-10;
+    }
+  }
+  .skills {
+    width: $w-100;
+    background: $primary;
+    color: $tWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .skills__wrapper {
+      width: $w-100 - 30;
+      border-top: 1px solid $white;
+      border-left: 1px solid $white;
+      border-radius: 25px;
+      padding: $p-10 * 2;
+      .wrapper__content {
+        width: $w-100;
+        padding: $p-10 * 2;
+        display: flex;
+        justify-content: space-between;
+        .content__item {
+          .item__title {
+            font-size: $h3;
+            margin-bottom: $m-10 * 5;
+            .fa {
+              margin-right: $m-10 * 2;
+            }
+            @include respond(phone) {
+              font-size: $subtitle;
+            }
+          }
+          .item__text {
+            padding-left: $p-10 * 5;
+            .text__wrapper {
+              margin-bottom: $m-10 * 2;
+              .wrapper__name {
+                font-size: $subtitle;
+                margin-bottom: $m-10 * 2;
+              }
+              .wrapper__progress {
+                width: $w-100;
+                height: 5px;
+                border: 1px solid $white;
+                .progress {
+                  height: $h-100;
+                  background: $white;
+                }
+                .html {
+                  width: $w-100 - 25;
+                }
+                .css {
+                  width: $w-100 - 25;
+                }
+                .js {
+                  width: $w-100 - 35;
+                }
+                .react {
+                  width: $w-100 - 35;
+                }
+                .node {
+                  width: $w-100 - 40;
+                }
+                .mysql {
+                  width: $w-100 - 40;
+                }
+              }
+            }
+            @include respond(tablet) {
+              padding: 0;
+            }
+          }
+          @include respond(tablet) {
+            margin-bottom: $m-10 * 5;
+          }
+        }
+        .content__line {
+          display: block;
+          width: 3px;
+          height: $h-10 * 30;
+          background: $white;
+          @include respond(tablet) {
+            display: none;
+          }
+        }
+        @include respond(tablet) {
+          flex-direction: column;
+          padding: $p-10;
+        }
+      }
+      @include respond(laptop) {
+        width: $w-100 - 10;
+      }
+      @include respond(tablet) {
+        width: $w-100;
+        border: 0;
+      }
+    }
+    @include respond(extraTablet) {
+      height: auto;
+      padding: $p-10 * 2 0;
+    }
+  }
+  .projects {
+    height: auto;
+    margin-bottom: $m-10 * 5;
+    display: flex;
+    align-items: center;
+    .projects__wrapper {
+      width: $w-100;
+      .wrapper__content {
+        position: relative;
+        .content__item {
+          width: $w-100;
+          height: $h-10 * 45;
+          display: flex;
+          .item__card {
+            width: $w-100 - 50;
+            padding: $p-10 * 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &:hover .card__image .image {
+              transform: scale(1.5);
+            }
+            .card__image {
+              width: $w-10 * 40;
+              height: $h-10 * 30;
+              margin-bottom: $m-10 * 3;
+              border-radius: 5px;
+              overflow: hidden;
+              .image {
+                transition: all 0.5s ease;
+              }
+              @include respond(extraTablet) {
+                width: $w-100;
+              }
+              @include respond(phone) {
+                width: $w-100;
+                height: $h-10 * 20;
+              }
+            }
+            .card__content {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .content__name {
+                font-size: $subtitle;
+                margin-bottom: $m-10;
+                text-align: center;
+              }
+              .content__button {
+                width: $w-100;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .button__link {
+                  width: $w-10 * 15;
+                  text-align: center;
+                  display: block;
+                  padding: $p-10 $p-10 * 3;
+                  background: $primary;
+                  color: $tWhite;
+                  border: 1px solid transparent;
+                  border-radius: 5px;
+                  transition: all 0.5s ease;
+                  &:hover {
+                    border-color: $primary;
+                    color: $tPrimary;
+                    background: transparent;
+                  }
+                }
+                .button {
+                  color: $tSecondary;
+                  cursor: pointer;
+                  display: none;
+                  .fa {
+                    transition: all 0.5s ease;
+                  }
+                  .fa--rotate {
+                    transform: rotate(-180deg);
+                  }
+                  @include respond(extraTablet) {
+                    display: block;
+                  }
+                }
+              }
+            }
+            .card__info {
+              display: none;
+              padding: $p-10 $p-10 * 2;
+              overflow: hidden;
+              height: 0;
+              transition: all 0.5s ease;
+              li {
+                margin: $m-10 0;
+                strong {
+                  font-weight: $medium;
+                }
+                .info__desc {
+                  padding-left: $p-10 * 2;
+                  list-style-type: disc;
+                }
+              }
+              @include respond(extraTablet) {
+                display: block;
+                padding: $p-10;
+              }
+            }
+            .card__info--active {
+              height: $h-10 * 50;
+            }
+            @include respond(extraTablet) {
+              width: $w-100;
+            }
+          }
+          .item__card--left {
+            margin-right: $m-10 * 5;
+            border-left: 1px solid $primary;
+            border-top: 1px solid $primary;
+            border-bottom: 1px solid $primary;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            @include respond(extraTablet) {
+              margin: $m-10 * 2 0;
+            }
+            @include respond(phone) {
+              border: 1px solid $primary;
+              border-radius: 5px;
+              padding: $p-10;
+              margin: $m-10 * 2 0;
+            }
+          }
+          .item__card--right {
+            margin-left: $m-10 * 5;
+            border-right: 1px solid $primary;
+            border-top: 1px solid $primary;
+            border-bottom: 1px solid $primary;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            @include respond(extraTablet) {
+              margin: $m-10 * 2 0;
+            }
+            @include respond(phone) {
+              border: 1px solid $primary;
+              border-radius: 5px;
+              padding: $p-10;
+              margin: $m-10 * 2 0;
+            }
+          }
+          .item__info {
+            width: $w-100 - 50;
+            padding: $p-10 $p-10 * 2;
+            li {
+              margin: $m-10 0;
+              strong {
+                font-weight: $medium;
+              }
+              .info__desc {
+                padding-left: $p-10 * 2;
+                list-style-type: disc;
+              }
+            }
+            @include respond(extraTablet) {
+              display: none;
+            }
+          }
+          @include respond(extraTablet) {
+            flex-direction: column;
+            height: auto;
+          }
+        }
+        .content__line {
+          width: 5px;
+          height: $h-100;
+          background: $primary;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          .line__round {
+            width: $w-10 * 3;
+            height: $h-10 * 3;
+            border-radius: 50%;
+            background: $primary;
+            color: $tWhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+          }
+          .line__round--card {
+            width: $w-10 * 5;
+            height: $h-10 * 5;
+          }
+          @include respond(extraTablet) {
+            display: none;
+          }
+        }
+      }
+    }
+    @include respond(extraTablet) {
+      padding: $p-10;
+    }
+  }
+  .experiences {
+    display: flex;
+    align-items: center;
+    .experiences__wrapper {
+      .wrapper__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        .content__card {
+          width: $w-100 - 53;
+          height: $h-10 * 25;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: $p-10 * 2;
+          transition: all 0.5s ease;
+          .card__title {
+            margin-bottom: $m-10 * 3;
+            .title__name {
+              font-size: $subtitle;
+              margin-bottom: $m-10;
+            }
+            .title__text {
+              font-size: $body;
+            }
+          }
+          .card__info {
+            .info__name {
+              font-weight: $medium;
+              margin-bottom: $m-10;
+            }
+            .info__desc {
+              padding-left: $p-10 * 2;
+              list-style-type: disc;
+              li {
+                margin: $m-10 0;
+              }
+            }
+          }
+          @include respond(extraTablet) {
+            width: $w-100 - 55;
+            height: $h-10 * 30;
+          }
+          @include respond(tablet) {
+            width: $w-100;
+            height: $h-10 * 30;
+          }
+        }
+        .content__card--top {
+          margin-right: $m-10 * 5;
+          border-left: 1px solid $primary;
+          border-top: 1px solid $primary;
+          border-bottom: 1px solid $primary;
+          border-radius: 25px;
+          @include respond(extraTablet) {
+            margin-right: $m-10 * 2;
+          }
+          @include respond(tablet) {
+            margin: $m-10 * 2 0;
+          }
+        }
+        .content__card--bottom {
+          margin-left: $m-10 * 5;
+          border-right: 1px solid $primary;
+          border-top: 1px solid $primary;
+          border-bottom: 1px solid $primary;
+          border-radius: 25px;
+          @include respond(extraTablet) {
+            margin-left: $m-10 * 2;
+          }
+          @include respond(tablet) {
+            margin: $m-10 * 2 0;
+          }
+        }
+        .content__card--top,
+        .content__card--bottom {
+          &:hover {
+            background: $primary;
+            color: $tWhite;
+          }
+        }
+        .content__card--d-none {
+          @include respond(tablet) {
+            display: none;
+          }
+        }
+        .content__line {
+          width: 3px;
+          height: $h-100;
+          background: $primary;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          .line__round {
+            width: $w-10 * 3;
+            height: $h-10 * 3;
+            border-radius: 50%;
+            background: $primary;
+            color: $tWhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .line__round--transparent {
+            background: transparent;
+          }
+          @include respond(tablet) {
+            display: none;
+          }
+        }
+      }
+    }
+    @include respond(extraTablet) {
+      height: auto;
+      padding: $p-10;
+    }
+  }
+  .reveal {
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .reveal-active {
+    opacity: 1;
+  }
+}
+@keyframes animate {
+  0%,
+  100% {
+    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+  }
+  25% {
+    border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+  }
+  50% {
+    border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+  }
+  75% {
+    border-radius: 40% 60% 70% 30% / 47% 42% 38% 53%;
+  }
+}

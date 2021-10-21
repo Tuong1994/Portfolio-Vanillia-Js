@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="portfolio">
+        <header class="portfolio__header" id="header">
+            <div class="header__name">
+                <p>TƯỜNG.</p>
+            </div>
+            <!-- responsive navbar -->
+            <nav class="header__responsive-navbar">
+                <div class="responsive-navbar__wrapper" id="navbar">
+                    <ul class="wrapper__list" id="navbarList">
+                        <li class="list__sub-link">
+                            <a href="#home" class="sub-link">
+                                <i class="fa fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="list__sub-link">
+                            <a href="#education" class="sub-link">
+                                <i class="fa fa-graduation-cap"></i>
+                            </a>
+                        </li>
+                        <li class="list__sub-link">
+                            <a href="#skills" class="sub-link">
+                                <i class="fa fa-book-open"></i>
+                            </a>
+                        </li>
+                        <li class="list__sub-link">
+                            <a href="#projects" class="sub-link">
+                                <i class="fa fa-book"></i>
+                            </a>
+                        </li>
+                        <li class="list__sub-link">
+                            <a href="#experiences" class="sub-link">
+                                <i class="fa fa-pen-fancy"></i>
+                            </a>
+                        </li>
+                        <li class="list__sub-link">
+                            <a href="#contact" class="sub-link">
+                                <i class="fa fa-phone"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- responsive navbar -->
+
+            <nav class="header__navbar">
+                <ul class="navbar__list">
+                    <li class="list__link">
+                        <a href="#home" class="link link-active">Home</a>
+                    </li>
+                    <li class="list__link">
+                        <a href="#education" class="link">Education</a>
+                    </li>
+                    <li class="list__link">
+                        <a href="#skills" class="link">Skills</a>
+                    </li>
+                    <li class="list__link">
+                        <a href="#projects" class="link">Projects</a>
+                    </li>
+                    <li class="list__link">
+                        <a href="#experiences" class="link">Experiences</a>
+                    </li>
+                    <li class="list__link">
+                        <a href="#contact" class="link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__change" id="changeTheme">
+                <div class="change__icon">
+                    <i class="fa fa-moon"></i>
+                </div>
+                <div class="change__icon">
+                    <i class="fa fa-lightbulb"></i>
+                </div>
+            </div>
+
+            <div class="header__button" id="headerButton">
+                <div class="button">
+                    <i class="fa fa-align-right"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="portfolio__content">
+            <section class="content home" id="home">
+                <div class="home__content">
+                    <h3 class="content__title">Hi, I'm <strong>TƯỜNG</strong></h3>
+                    <h5 class="content__position">Front End Web Developer</h5>
+                    <p class="content__text">
+                        I came from different jobs, but I find myself interested in IT and specifically in the field of
+                        Front End Web Developer, I have completed Front End Web Developer and Back End NodeJs courses. I
+                        have worked through some small projects during my study days. I wish to become a professional
+                        web developer to create cool websites for customers.
+                    </p>
+                    <div class="content__download">
+                        <a class="download" href="./file/Nhâm Bổn Tường - Front End Web Developer ( English ).pdf" download="CV - Nhâm Bổn Tường">
+                            <span>Download CV</span>
+                            <i class="fa fa-cloud-download-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__image">
+                    <img class="image" src="./img/Avatar.jpg" alt="Tường">
+                </div>
+            </section>
+
+            <section class="content education reveal" id="education">
+                <div class="content__title">
+                    Education
+                </div>
+                <div class="education__content">
+                    <div class="content__item">
+                        <h3 class="item__title">
+                            HCMC University of Food Industry
+                        </h3>
+                        <div class="item__text">
+                            <p>Restaurant Management</p>
+                            <p>08/2012 - 08/2015</p>
+                        </div>
+                    </div>
+                    <div class="content__image">
+                        <div class="image__wrapper">
+                            <img class="image" src="./img/university.jpg" alt="university">
+                        </div>
+                    </div>
+                    <div class="content__image">
+                        <div class="image__wrapper">
+                            <img class="image" src="./img/cybersoft.jpg" alt="cybersoft">
+                        </div>
+                    </div>
+                    <div class="content__item">
+                        <h3 class="item__title">
+                            Cybersoft Academy
+                        </h3>
+                        <div class="item__text">
+                            <p>Bootcamp Front End Web Developer</p>
+                            <p>09/2020 - 04/2021</p>
+                        </div>
+                        <div class="item__text">
+                            <p>Back End Developer - NodeJS</p>
+                            <p>06/2021 - 08/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content skills reveal" id="skills">
+                <div class="skills__wrapper">
+                    <div class="content__title">
+                        Skills
+                    </div>
+                    <div class="wrapper__content">
+                        <div class="content__item">
+                            <div class="item__title">
+                                <i class="fa fa-code"></i>
+                                <span>Front End Developer</span>
+                            </div>
+                            <div class="item__text">
+                                <div class="text__wrapper">
+                                    <p class="wrapper__name">HTML/HTML5</p>
+                                    <div class="wrapper__progress">
+                                        <div class="progress html"></div>
+                                    </div>
+                                </div>
+                                <div class="text__wrapper">
+                                    <p class="wrapper__name">CSS/CSS3</p>
+                                    <div class="wrapper__progress">
+                                        <div class="progress css"></div>
+                                    </div>
+                                </div>
+                                <div class="text__wrapper">
+                                    <p class="wrapper__name">Javascript</p>
+                                    <div class="wrapper__progress">
+                                        <div class="progress js"></div>
+                                    </div>
+                                </div>
+                                <div class="text__wrapper">
+                                    <p class="wrapper__name">ReactJs</p>
+                                    <div class="wrapper__progress">
+                                        <div class="progress react"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content__line"></div>
+
+                        <div class="content__item">
+                            <div class="item__title">
+                                <i class="fa fa-server"></i>
+                                <span>Back End Developer</span>
+                            </div>
+                            <div class="item__text">
+                                <div class="text__wrapper">
+                                    <p class="wrapper__name">NodeJs</p>
+                                    <div class="wrapper__progress">
+                                        <div class="progress node"></div>
+                                    </div>
+                                </div>
+                                <div class="text__wrapper">
+                                    <p class="wrapper__name">MySQL</p>
+                                    <div class="wrapper__progress">
+                                        <div class="progress mysql"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content projects reveal" id="projects">
+                <div class="projects__wrapper">
+                    <div class="content__title">
+                        Projects
+                    </div>
+                    <div class="wrapper__content">
+                        <div class="content__item">
+                            <div class="item__card item__card--left">
+                                <div class="card__image">
+                                    <img src="./img/tix.PNG" alt="tix" class="image">
+                                </div>
+                                <div class="card__content">
+                                    <p class="content__name">Tix - Booking movie ticket (Frontend)</p>
+                                    <div class="content__button">
+                                        <a class="button__link" href="https://tix-bookingticket.surge.sh/"
+                                            target="_blank">Link demo</a>
+                                        <div class="button" id="projectButtonOne">
+                                            <span>View more</span>
+                                            <i class="fa fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="card__info" id="tix">
+                                    <li>Desciption : A website will help end-user easily book a movie ticket</li>
+                                    <li><strong>Customer : </strong>Cybersoft Academy</li>
+                                    <li><strong>Teamsize : </strong>1</li>
+                                    <li><strong>Position : </strong>Developer</li>
+                                    <li>
+                                        <strong>My responsibilities :</strong>
+                                        <ul class="info__desc">
+                                            <li>Get data from API</li>
+                                            <li>Analysis and create UI (User page, Admin page)</li>
+                                            <li>Development features (sign in/sign up, book ticket, add/update/delete
+                                                movies
+                                                and users)</li>
+                                            <li> Review code</li>
+                                            <li>Optimize code</li>
+                                            <li>Bug Fixing</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Technologies used : </strong>ReactJs, Redux, React Hooks, Bootstrap 4,
+                                        Axios, SASS, Github</li>
+                                </ul>
+                            </div>
+                            <ul class="item__info">
+                                <li>Desciption : A website will help end-user easily book a movie ticket</li>
+                                <li><strong>Customer : </strong>Cybersoft Academy</li>
+                                <li><strong>Teamsize : </strong>1</li>
+                                <li><strong>Position : </strong>Developer</li>
+                                <li>
+                                    <strong>My responsibilities :</strong>
+                                    <ul class="info__desc">
+                                        <li>Get data from API</li>
+                                        <li>Analysis and create UI (User page, Admin page)</li>
+                                        <li>Development features (sign in/sign up, book ticket, add/update/delete movies
+                                            and users)</li>
+                                        <li> Review code</li>
+                                        <li>Optimize code</li>
+                                        <li>Bug Fixing</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Technologies used : </strong>ReactJs, Redux, React Hooks, Bootstrap 4,
+                                    Axios, SASS, Github</li>
+                            </ul>
+                        </div>
+
+                        <div class="content__line">
+                            <div class="line__round line__round--card">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                            <div class="line__round"></div>
+                            <div class="line__round  line__round--card">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+
+                        <div class="content__item">
+                            <ul class="item__info">
+                                <li>Desciption : A website will help end-user easily register courses</li>
+                                <li><strong>Customer : </strong>Cybersoft Academy</li>
+                                <li><strong>Teamsize : </strong>1</li>
+                                <li><strong>Position : </strong>Developer</li>
+                                <li>
+                                    <strong>My responsibilities :</strong>
+                                    <ul class="info__desc">
+                                        <li>Analysis and create database</li>
+                                        <li>Create APIs</li>
+                                        <li>Get data from API</li>
+                                        <li>Analysis and create UI (User page, Admin page)</li>
+                                        <li>Development features (sign in/sign up, register courses, add/update/delete
+                                            courses
+                                            and users)</li>
+                                        <li> Review code</li>
+                                        <li>Optimize code</li>
+                                        <li>Bug Fixing</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Technologies used : </strong>ReactJs, Redux, React Hooks, Bootstrap 4,
+                                    Axios, SASS, Github, NodeJs, ExpressJs, Sequelize, MySQL</li>
+                            </ul>
+                            <div class="item__card item__card--right">
+                                <div class="card__image">
+                                    <img src="./img/cyberlearn.PNG" alt="cyberlearn" class="image">
+                                </div>
+                                <div class="card__content">
+                                    <p class="content__name">Cybersoft Academy (Fullstack)</p>
+                                    <div class="content__button">
+                                        <a class="button__link" href="#" target="_blank">Link demo</a>
+                                        <div class="button" id="projectButtonTwo">
+                                            <span>View more</span>
+                                            <i class="fa fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="card__info" id="cybersoft">
+                                    <li>Desciption : A website will help end-user easily register courses</li>
+                                    <li><strong>Customer : </strong>Cybersoft Academy</li>
+                                    <li><strong>Teamsize : </strong>1</li>
+                                    <li><strong>Position : </strong>Developer</li>
+                                    <li>
+                                        <strong>My responsibilities :</strong>
+                                        <ul class="info__desc">
+                                            <li>Analysis and create database</li>
+                                            <li>Create APIs</li>
+                                            <li>Get data from API</li>
+                                            <li>Analysis and create UI (User page, Admin page)</li>
+                                            <li>Development features (sign in/sign up, register courses,
+                                                add/update/delete
+                                                courses
+                                                and users)</li>
+                                            <li> Review code</li>
+                                            <li>Optimize code</li>
+                                            <li>Bug Fixing</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Technologies used : </strong>ReactJs, Redux, React Hooks, Bootstrap 4,
+                                        Axios, SASS, Github, NodeJs, ExpressJs, Sequelize, MySQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content experiences reveal" id="experiences">
+                <div class="experiences__wrapper">
+
+                    <div class="content__title">
+                        Experiences
+                    </div>
+
+                    <div class="wrapper__content">
+
+                        <div class="content__card content__card--top">
+                            <div class="card__title">
+                                <h3 class="title__name">Tan Thanh Production Trading Service Co., Lt</h3>
+                                <p class="title__text">June 2020 - August 2021</p>
+                            </div>
+                            <div class="card__info">
+                                <p class="info__name">Office Staff</p>
+                                <ul class="info__desc">
+                                    <li> Introduce, consult products and answer customers' queries via phone and
+                                        email. </li>
+                                    <li>Make product quotes </li>
+                                    <li>Handle customers orders
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content__card content__card--d-none"></div>
+
+                        <div class="content__line">
+                            <div class="line__round">1</div>
+                            <div class="line__round line__round--transparent"></div>
+                            <div class="line__round">2</div>
+                        </div>
+
+                        <div class="content__card content__card--d-none"></div>
+
+                        <div class="content__card content__card--bottom">
+                            <div class="card__title">
+                                <h3 class="title__name">Nguyen Du Park Villas</h3>
+                                <p class="title__text">Nov 2017 - July 2019</p>
+                            </div>
+                            <div class="card__info">
+                                <p class="info__name">Service Staff</p>
+                                <ul class="info__desc">
+                                    <li>Serve according to customer's request </li>
+                                    <li>Clearn the assigned area</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="content portfolio__footer" id="contact">
+            <div class="footer__wrapper">
+                <div class="wrapper__title">
+                    Contact
+                </div>
+                <div class="wrapper__content">
+                    <ul class="content__contact">
+                        <li>
+                            <i class="fa fa-user"></i>
+                            <span>Nhâm Bổn Tường</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            <span>28/11/1994</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span>0793.229.970</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <span>nhambontuong68@gmail.com</span>
+                        </li>
+                    </ul>
+                    <div class="content__socials">
+                        <a class="socials__link" href="https://www.facebook.com/jack.prophet.984/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="socials__link" href="https://github.com/Tuong1994" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a class="socials__link"
+                            href="https://www.linkedin.com/in/nh%C3%A2m-t%C6%B0%E1%BB%9Dng-185130216/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
