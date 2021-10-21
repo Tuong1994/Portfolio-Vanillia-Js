@@ -746,7 +746,7 @@ img {
 }
 .portfolio__content .projects .projects__wrapper .wrapper__content .content__item .item__card .card__content .content__button .button__link:hover {
   border-color: #6666ff;
-  color: #333;
+  color: #6666ff;
   background: transparent;
 }
 .portfolio__content .projects .projects__wrapper .wrapper__content .content__item .item__card .card__content .content__button .button {
