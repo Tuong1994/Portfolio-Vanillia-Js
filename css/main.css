@@ -343,7 +343,7 @@ img {
 .portfolio__content .content {
   width: 70%;
   height: 100vh;
-  padding: 50px 0;
+  margin-bottom: 50px;
 }
 .portfolio__content .content .content__title {
   font-size: 40px;
@@ -467,7 +467,6 @@ img {
 }
 .portfolio__content .education {
   height: auto;
-  margin-bottom: 50px;
 }
 .portfolio__content .education .education__content {
   display: flex;
@@ -672,7 +671,6 @@ img {
 }
 .portfolio__content .projects {
   height: auto;
-  margin-bottom: 50px;
   display: flex;
   align-items: center;
 }
@@ -900,7 +898,7 @@ img {
 }
 @media only screen and (max-width: 992px) {
   .portfolio__content .projects {
-    padding: 10px;
+    padding: 50px 10px;
   }
 }
 .portfolio__content .experiences {

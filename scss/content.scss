@@ -5,7 +5,7 @@
   .content {
     width: $w-100 - 30;
     height: 100vh;
-    padding: $p-10 * 5 0;
+    margin-bottom: $m-10 * 5;
     .content__title {
       font-size: $h2;
       margin-bottom: $m-10 * 5;
@@ -113,7 +113,6 @@
   }
   .education {
     height: auto;
-    margin-bottom: $m-10 * 5;
     .education__content {
       display: flex;
       align-items: center;
@@ -294,7 +293,6 @@
   }
   .projects {
     height: auto;
-    margin-bottom: $m-10 * 5;
     display: flex;
     align-items: center;
     .projects__wrapper {
@@ -496,7 +494,7 @@
       }
     }
     @include respond(extraTablet) {
-      padding: $p-10;
+      padding: $p-10 * 5 $p-10;
     }
   }
   .experiences {
